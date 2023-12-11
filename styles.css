@@ -57,7 +57,7 @@ body {
 
 #left {
   height: 100%;
-  width: 35%;
+  width: 30%;
   display: flex;
   align-items: center;
   margin: 0px 120px;
@@ -67,23 +67,90 @@ body {
 
 #left h5 {
   color: rgba(128, 128, 128, 0.591);
-  font-size: 23px;
+  font-size: 15px;
+  margin-top: 30px;
 }
 
 #left h2 {
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 #left p {
   color: rgba(128, 128, 128, 0.591);
+  margin-bottom: 60px;
 }
 
 button {
   margin-bottom: 100px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  border-radius: 0px 20px 20px 20px;
+}
+
+button:hover {
+  scale: 1.1;
+  transition: linear;
+  font-weight: 800;
 }
 
 #right {
   height: 100%;
-  width: 65%;
-  background-color: blue;
+  width: 70%;
+  /* background-color: blue; */
+  position: relative;
+  padding: 45px 10px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+#right::-webkit-scrollbar {
+  display: none;
+}
+.elem {
+  height: 430px;
+  width: 320px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 15px;
+
+  box-shadow: rgb(14, 14, 14);
+}
+
+.elem img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 10px 10px;
+}
+
+.elem h4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 30px;
+  background-color: #a9a9a9;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.elem h5 {
+  position: absolute;
+  right: 0;
+  bottom: 39px;
+  padding: 10px 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px 0px 0px 10px;
+  color: white;
+}
+
+.elem:hover {
+  scale: 1.1;
+  cursor: pointer;
+  animation: scale linear 0.5 0.3 infinite all none;
+  border-radius: 10px;
 }
